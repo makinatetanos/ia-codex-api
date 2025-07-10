@@ -1,0 +1,25 @@
+# Entorno virtual
+venv/
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+
+# Archivos de entorno
+.env
+.env.*
+
+# Archivos de VSCode
+.vscode/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de test
+*.pytest_cache/
+
+# Node y extensiones
+node_modules/
+extension/node_modules/
+extension/dist/

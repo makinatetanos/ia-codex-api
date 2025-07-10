@@ -1,0 +1,20 @@
+# ia-codex-api/requirements.txt
+
+# Framework web para la API
+Flask>=2.0.0
+
+# Librería principal para los modelos de IA
+transformers>=4.0.0
+
+# Backend de machine learning (elige uno: torch o tensorflow)
+torch>=1.9.0
+# tensorflow>=2.0.0 # Descomentar si prefieres TensorFlow en lugar de PyTorch
+
+# Para cargar variables de entorno desde el archivo .env
+python-dotenv>=1.0.0
+
+# Servidor WSGI para producción (opcional en desarrollo, pero buena práctica)
+gunicorn>=20.0.0
+
+# Para pruebas unitarias y de integración
+pytest>=7.0.0
