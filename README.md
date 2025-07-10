@@ -240,5 +240,4 @@ GPLv3. Consulta el archivo `LICENSE` para detalles.
 
 ## Contacto
 
-Tu Nombre – [tu\_email@example.com](mailto:tu_email@example.com)
 [Repositorio GitHub](https://github.com/tu-usuario/ia-codex-api)
