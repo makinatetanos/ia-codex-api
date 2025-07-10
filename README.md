@@ -240,4 +240,4 @@ GPLv3. Consulta el archivo `LICENSE` para detalles.
 
 ## Contacto
 
-[Repositorio GitHub](https://github.com/tu-usuario/ia-codex-api)
+[Repositorio GitHub](https://github.com/makinatetanos/ia-codex-api)
