@@ -117,7 +117,67 @@ O simplemente:
 flask --app app run
 ```
 
+
 La API estará disponible en `http://127.0.0.1:5000/`.
+
+---
+
+## Uso desde cualquier editor o terminal (CLI)
+
+La API es multiplataforma y puede integrarse en cualquier editor o flujo de trabajo gracias al script `iacodex_cli.py`. Puedes usarlo en Windows, Linux o macOS, y desde cualquier editor que permita ejecutar comandos externos (Vim, Neovim, nano, Sublime, VS Code, Emacs, etc.).
+
+### Ejemplos de uso
+
+**Autocompletar código**
+
+```bash
+python iacodex_cli.py complete -p "def suma(a, b):"
+```
+
+**Corregir código**
+
+```bash
+python iacodex_cli.py fix -c "pront('hola')"
+```
+
+**Convertir código**
+
+```bash
+python iacodex_cli.py convert -c "print('hola')" -t javascript
+```
+
+**Usar con pipes o redirección (útil en Vim, nano, etc.)**
+
+```bash
+echo "pront('hola')" | python iacodex_cli.py fix
+cat archivo.py | python iacodex_cli.py complete
+```
+
+**En Vim/Neovim**
+
+Selecciona el código en modo visual y ejecuta:
+
+```vim
+:'<,'>w !python iacodex_cli.py fix
+```
+
+**En nano**
+
+Guarda el código en un archivo y luego:
+
+```bash
+python iacodex_cli.py fix < archivo.py
+```
+
+**En VS Code, Sublime, Emacs, etc.**
+
+Puedes crear atajos o tareas que llamen a la CLI con el texto seleccionado o el archivo actual.
+
+> Puedes usar stdin para enviar bloques de código desde cualquier editor compatible con comandos externos.
+
+### Personalización
+
+Si tu API no está en `http://127.0.0.1:5000`, edita la variable `API_URL` en `iacodex_cli.py`.
 
 ### Endpoints
 
